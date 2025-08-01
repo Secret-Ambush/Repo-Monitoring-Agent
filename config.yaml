@@ -1,0 +1,23 @@
+repository:
+  owner: "Secret-Ambush"
+  name: "testingIssues"
+  token: "${GITHUB_TOKEN}"
+
+monitoring:
+  issue_threshold_days: 7
+  check_interval_hours: 24
+  pr_lookback_hours: 24
+
+email:
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  username: "${EMAIL_USERNAME}"
+  password: "${EMAIL_PASSWORD}"
+  recipients:
+    - "admin@company.com"
+    - "team@company.com"
+
+# Optional: OpenAI API for enhanced email content
+openai:
+  api_key: "${OPENAI_API_KEY}"
+  model: "gpt-3.5-turbo" 
