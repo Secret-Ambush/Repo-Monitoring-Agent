@@ -1,0 +1,17 @@
+# MCP dependencies
+mcp>=1.0.0
+mcp-github>=0.1.0
+mcp-email>=0.1.0
+
+# Core dependencies
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+jinja2>=3.0.0
+
+# LangGraph for workflow
+langgraph>=0.0.20
+langchain>=0.1.0
+
+# For testing
+pytest>=7.0.0 

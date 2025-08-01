@@ -1,0 +1,29 @@
+# MCP Configuration
+mcp:
+  servers:
+    github:
+      command: "mcp-github"
+      args: ["--token", "${GITHUB_TOKEN}"]
+    email:
+      command: "mcp-email"
+      args: ["--smtp-host", "${SMTP_HOST}", "--smtp-port", "${SMTP_PORT}", "--username", "${EMAIL_USERNAME}", "--password", "${EMAIL_PASSWORD}"]
+
+# Repository Configuration
+repository:
+  owner: "Secret-Ambush"
+  name: "testingIssues"
+
+# Monitoring Configuration
+monitoring:
+  issue_threshold_days: 7
+  check_interval_hours: 24
+  pr_lookback_hours: 24
+
+# Email Configuration
+email:
+  recipients:
+    - "test@example.com"
+  smtp_host: "${SMTP_HOST}"
+  smtp_port: "${SMTP_PORT}"
+  username: "${EMAIL_USERNAME}"
+  password: "${EMAIL_PASSWORD}" 
